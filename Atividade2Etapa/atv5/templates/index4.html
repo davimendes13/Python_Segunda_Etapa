@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Exercício 4 - Lista{% endblock %}
+
+{% block conteudo %}
+    <h2>Lista de Alunos</h2>
+    <ul>
+        {% for aluno in alunos %}
+            <li>{{ aluno }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

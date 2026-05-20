@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Exercício 3 - Dicionário{% endblock %}
+
+{% block conteudo %}
+    <h2>Dados do Usuário</h2>
+    <ul>
+        <li><strong>Nome:</strong> {{ usuario.nome }}</li>
+        <li><strong>E-mail:</strong> {{ usuario.email }}</li>
+    </ul>
+{% endblock %}

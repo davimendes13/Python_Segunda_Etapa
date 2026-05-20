@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Exercício 5 - Condicional{% endblock %}
+
+{% block conteudo %}
+    <h2>Resultado de Avaliação</h2>
+    <p>A nota do aluno é: <strong>{{ nota }}</strong></p>
+    <p>Status do aluno: 
+        {% if nota >= 7 %}
+            <span class="aprovado">Aprovado</span>
+        {% else %}
+            <span class="reprovado">Reprovado</span>
+        {% endif %}
+    </p>
+{% endblock %}
