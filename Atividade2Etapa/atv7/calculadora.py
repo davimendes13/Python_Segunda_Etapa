@@ -51,6 +51,9 @@ def calcular():
         elif operacao == "**":
             resultado = num1 ** num2
             etapas = f"{num1} ** {num2} = {resultado}"
+        elif operacao == "log":
+            resultado = math.log(num1, num2)
+            etapas = f"{math.log(num1, num2)}"
         else:
             resultado = "Operação inválida"
             etapas = "Operação inválida"
